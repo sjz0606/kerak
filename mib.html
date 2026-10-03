@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>MIB qarzlari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/ilova.css">
+  <link rel="stylesheet" href="assets/ota_ona.css">
+</head>
+<body class="sahifa-ichki">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- Soliq gerbi (qanotli emblema) -->
+  <symbol id="i-gerb" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M5 9.5Q24 2.5 43 9.5Q44.5 27 33.5 37L24 45 14.5 37Q3.5 27 5 9.5Z"/>
+    <g fill="#fff"><circle cx="17.5" cy="11.2" r="1"/><circle cx="20.8" cy="10.5" r="1"/><circle cx="24" cy="10.3" r="1"/><circle cx="27.2" cy="10.5" r="1"/><circle cx="30.5" cy="11.2" r="1"/></g>
+    <g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round">
+      <path d="M8.5 16q6 5 9.5 14.5M39.5 16q-6 5-9.5 14.5M8.5 23q5 5.5 9 12M39.5 23q-5 5.5-9 12M12 31q3.5 3 7 7M36 31q-3.5 3-7 7"/>
+    </g>
+    <circle cx="24" cy="24.5" r="6.8" fill="#fff"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M21 28l5.5-6.2M22.3 21.5h4.6v4.6"/>
+  </symbol>
+
+  <!-- Qo'lda pul xaltasi (keshbek) -->
+  <symbol id="i-keshbek" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M20 3.5h8l-2.2 4.2h-3.6z"/>
+    <path fill="currentColor" d="M21 9h6c5 3.6 8.5 8.4 8.5 12.6 0 3.2-2.4 5.4-5.6 5.4H18.1c-3.2 0-5.6-2.2-5.6-5.4C12.5 17.4 16 12.6 21 9z"/>
+    <path fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" d="M24 13.5v9M26.4 15.5c-.6-.8-1.4-1.1-2.4-1.1-1.4 0-2.4.7-2.4 1.8 0 2.6 4.9 1.4 4.9 4 0 1.1-1 1.9-2.5 1.9-1.1 0-2-.4-2.6-1.2"/>
+    <g fill="currentColor" stroke="#fff" stroke-width="1.2"><rect x="29" y="22" width="12" height="4" rx="2"/><rect x="30" y="18.4" width="11" height="4" rx="2"/></g>
+    <rect x="3" y="29" width="6.5" height="15" rx="1.5" fill="currentColor"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" d="M10 31.5l7-2.6h10.5c2.6 0 2.6 4.2 0 4.2H20M10 41l4.2-1.8h12.4l14.2-8.8c2.2-1.3.2-4.6-2-3.4l-9.2 5"/>
+  </symbol>
+
+  <!-- Qo'l siqish (Soliq hamkor) -->
+  <symbol id="i-hamkor" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M1.5 17.5l7.5-3.2 6.6 13.3-7.4 3.3z"/>
+    <path fill="currentColor" d="M46.5 17.5L39 14.3l-6.6 13.3 7.4 3.3z"/>
+    <path fill="currentColor" d="M37.8 16.6l-7.4-3.1c-2.4-1-4.3-.8-6.2.4l-6.7 4.4c-1.4 1-1.2 3 .4 3.6 1.6.6 3 .1 4.4-.8l2.7-1.7 9.5 8.2z"/>
+    <path fill="currentColor" d="M10.3 16.4l6-2.4 1.6.6-3.2 2.1c-2.5 1.7-2.4 5.6.6 6.8 2.4.9 4.6.3 6.3-.8l1.6-1 8.6 7.4c1.2 1 .1 3-1.5 2.3l-.6-.3c.7 1.4-.6 2.8-2 2.1l-.8-.4c.4 1.4-1 2.5-2.3 1.8l-1-.5c0 1.3-1.4 2-2.5 1.3L15.6 30z"/>
+    <g fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round"><path d="M21.5 30.5l2.8 2.2M19 32.6l2.6 2M24.1 28.3l2.8 2.3"/></g>
+  </symbol>
+
+  <!-- Barqarorlik reytingi -->
+  <symbol id="i-reyting" viewBox="0 0 48 48">
+    <rect x="7" y="5" width="34" height="10" rx="3" fill="currentColor"/>
+    <rect x="7" y="17.5" width="34" height="12.5" rx="3" fill="currentColor"/>
+    <rect x="7" y="32.5" width="34" height="10" rx="3" fill="currentColor"/>
+    <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12.5 10h6.5M24 10h11.5M12.5 37.5h6.5M24 37.5h11.5"/></g>
+    <g fill="#fff"><path id="yulduz" d="M15 20.3l1.3 2.6 2.9.4-2.1 2 .5 2.8-2.6-1.3-2.6 1.3.5-2.8-2.1-2 2.9-.4z"/><use href="#yulduz" x="9"/><use href="#yulduz" x="18"/></g>
+  </symbol>
+
+  <!-- Uy -->
+  <symbol id="i-uy" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M22.2 5.6a2.8 2.8 0 013.6 0l15.4 13.1c1.4 1.2.6 3.5-1.3 3.5H39V40a3 3 0 01-3 3H12a3 3 0 01-3-3V22.2h-.9c-1.9 0-2.7-2.3-1.3-3.5z"/>
+    <path fill="none" stroke="#fff" stroke-width="2.4" d="M19.5 43V33.5a4.5 4.5 0 019 0V43"/>
+  </symbol>
+
+  <!-- Portfel ("Soliq" biznes) -->
+  <symbol id="i-portfel" viewBox="0 0 48 48">
+    <path fill="none" stroke="currentColor" stroke-width="3" d="M18 13V9.5A2.5 2.5 0 0120.5 7h7A2.5 2.5 0 0130 9.5V13"/>
+    <rect x="5" y="12" width="38" height="29" rx="7" fill="currentColor"/>
+    <path fill="none" stroke="#fff" stroke-width="2" d="M5.5 24.5h37"/>
+    <rect x="20" y="21" width="8" height="7.5" rx="2" fill="currentColor" stroke="#fff" stroke-width="2"/>
+  </symbol>
+
+  <!-- Shaxs va qulf (Personal xizmatlar) -->
+  <symbol id="i-shaxs-qulf" viewBox="0 0 48 48">
+    <circle cx="20" cy="13" r="7.5" fill="currentColor"/>
+    <path fill="currentColor" d="M5 41c0-9.5 6.6-15 15-15 3.4 0 6.2.8 8.5 2.4V41z"/>
+    <path fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round" d="M27 30h14v12H27z"/>
+    <path fill="none" stroke="currentColor" stroke-width="2.6" d="M30 30.5v-3a4 4 0 018 0v3"/>
+    <rect x="27" y="30" width="14" height="12" rx="2.5" fill="currentColor"/>
+    <circle cx="34" cy="35.3" r="1.6" fill="#fff"/><path stroke="#fff" stroke-width="1.6" stroke-linecap="round" d="M34 36.5v2.2"/>
+  </symbol>
+
+  <!-- Hamyon va belgi (To'lovlar) -->
+  <symbol id="i-hamyon-check" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M14 10.5c0-1.9 1.6-3.5 3.5-3.5H29c3 0 5.5 2.5 5.5 5.5V14H38a5 5 0 015 5v3.5h-8.3a5.5 5.5 0 000 11H43V37a5 5 0 01-5 5H19a5 5 0 01-5-5z"/>
+    <circle cx="35.2" cy="28" r="2.3" fill="currentColor"/>
+    <path fill="currentColor" d="M34.7 24.5H44v7h-9.3a3.5 3.5 0 010-7z"/><circle cx="35" cy="28" r="1.7" fill="#fff"/>
+    <circle cx="13" cy="33" r="9" fill="currentColor" stroke="#fff" stroke-width="2.5"/>
+    <path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9.2 33.2l2.6 2.6 5-5.2"/>
+  </symbol>
+
+  <!-- Telefon va hujjatlar (jarimalar / kalkulyator) -->
+  <symbol id="i-telefon-hujjat" viewBox="0 0 48 48">
+    <rect x="18" y="4" width="25" height="28" rx="2.5" fill="currentColor"/>
+    <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M22.5 9.5h16M28 15h10.5M28 20h10.5M28 25h10.5"/></g>
+    <rect x="6.5" y="15" width="19" height="29" rx="3.2" fill="#fff" stroke="currentColor" stroke-width="2.8"/>
+    <path stroke="currentColor" stroke-width="2.4" d="M6.5 38.5h19"/>
+    <circle cx="16" cy="27" r="5.6" fill="none" stroke="currentColor" stroke-width="2.2"/>
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13.6 27.1l1.7 1.7 3.2-3.4"/>
+  </symbol>
+
+  <!-- Ota-ona (ikki bola) -->
+  <symbol id="i-otaona" viewBox="0 0 48 48">
+    <circle cx="14.5" cy="9" r="4.6" fill="currentColor"/><circle cx="33.5" cy="9" r="4.6" fill="currentColor"/>
+    <path fill="currentColor" d="M9 20c0-3 2.2-5.2 5.5-5.2s5.5 2.2 5.5 5.2v11.5h-11z"/>
+    <rect x="9.6" y="29" width="4.2" height="15" rx="2.1" fill="currentColor"/><rect x="15.2" y="29" width="4.2" height="15" rx="2.1" fill="currentColor"/>
+    <path fill="currentColor" d="M28.7 18.5c.8-2.4 2.6-3.7 4.8-3.7s4 1.3 4.8 3.7l3.6 13H25.1z"/>
+    <rect x="28.8" y="29" width="4.2" height="15" rx="2.1" fill="currentColor"/><rect x="34" y="29" width="4.2" height="15" rx="2.1" fill="currentColor"/>
+  </symbol>
+
+  <!-- Chek va foiz (qarzni so'ndirish) -->
+  <symbol id="i-chek-foiz" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M33.5 5H38a5.5 5.5 0 015.5 5.5v7H37V10a3.5 3.5 0 00-3.5-5z"/>
+    <path fill="currentColor" d="M11.5 5h22A3.5 3.5 0 0137 8.5V44l-6.4-4.4-6.4 4.4-6.3-4.4L11.5 44A3.5 3.5 0 018 40.5V8.5A3.5 3.5 0 0111.5 5z"/>
+    <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" d="M28 15L16.5 29"/>
+    <circle cx="17.3" cy="16.3" r="2.5" fill="#fff"/><circle cx="27.3" cy="27.7" r="2.5" fill="#fff"/>
+  </symbol>
+
+  <!-- Guvohnoma (imtiyoz) -->
+  <symbol id="i-guvohnoma" viewBox="0 0 48 48">
+    <rect x="5.5" y="7" width="37" height="34" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path fill="currentColor" d="M5.5 10a3 3 0 013-3h31a3 3 0 013 3v4.5h-37z"/>
+    <g fill="#fff"><circle cx="10.5" cy="10.8" r="1"/><circle cx="14" cy="10.8" r="1"/><circle cx="17.5" cy="10.8" r="1"/></g>
+    <circle cx="16.5" cy="24" r="5.2" fill="currentColor"/>
+    <path fill="currentColor" d="M12.8 27.5v8l3.7-2.4 3.7 2.4v-8z"/>
+    <g fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M25.5 22h12M25.5 29h12"/></g>
+  </symbol>
+
+  <!-- Hujjatlar -->
+  <symbol id="i-hujjatlar" viewBox="0 0 48 48">
+    <rect x="14" y="9" width="27" height="35" rx="3.5" fill="currentColor"/>
+    <rect x="8" y="4" width="27" height="35" rx="3.5" fill="currentColor" stroke="#fff" stroke-width="2.2"/>
+    <g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"><path d="M14 13.5h15M14 20.5h15M14 27.5h10"/></g>
+  </symbol>
+
+  <!-- Hamyon va qog'oz (daromad va xarajat) -->
+  <symbol id="i-hamyon-qogoz" viewBox="0 0 48 48">
+    <path fill="currentColor" d="M18 4l14 3-2 10H16z" opacity=".75"/>
+    <path fill="currentColor" d="M27 7l12 4-4 8H24z"/>
+    <rect x="6" y="17" width="36" height="25" rx="5" fill="currentColor"/>
+    <path fill="#fff" d="M32 25.5h10v9H32a4.5 4.5 0 010-9z"/><circle cx="33" cy="30" r="2" fill="currentColor"/>
+  </symbol>
+
+  <!-- Bank kartasi -->
+  <symbol id="i-karta" viewBox="0 0 48 48">
+    <rect x="5" y="10" width="38" height="28" rx="7" fill="currentColor"/>
+    <path fill="#fff" d="M5 17.5h38v5.5H5z"/>
+    <rect x="11" y="29" width="9" height="3.2" rx="1.6" fill="#fff"/><rect x="22.5" y="29" width="6" height="3.2" rx="1.6" fill="#fff"/>
+  </symbol>
+
+  <!-- QR skaner -->
+  <symbol id="i-qr" viewBox="0 0 48 48">
+    <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 15V9a4 4 0 014-4h6M33 5h6a4 4 0 014 4v6M43 33v6a4 4 0 01-4 4h-6M15 43H9a4 4 0 01-4-4v-6"/>
+      <rect x="12" y="12" width="9" height="9" rx="2.2"/><rect x="27" y="12" width="9" height="9" rx="2.2"/><rect x="12" y="27" width="9" height="9" rx="2.2"/>
+      <path d="M27 27h3.5v3.5H27zM34 34v2h2M36 27v2.5"/>
+    </g>
+  </symbol>
+
+  <!-- Tavsiyalar -->
+  <symbol id="i-telefon" viewBox="0 0 48 48">
+    <rect x="14" y="4" width="20" height="40" rx="3.5" fill="currentColor"/>
+    <path stroke="#fff" stroke-width="2.2" stroke-linecap="round" d="M21 39h6"/>
+  </symbol>
+  <symbol id="i-pasport" viewBox="0 0 48 48">
+    <rect x="31" y="9" width="10" height="34" rx="2" fill="currentColor"/>
+    <g stroke="#fff" stroke-width="1.6"><path d="M33.5 14v24M36 14v24M38.5 14v24"/></g>
+    <rect x="8" y="5" width="25" height="38" rx="2.5" fill="currentColor" stroke="#fff" stroke-width="1.6"/>
+    <g fill="none" stroke="#fff" stroke-width="1.7"><circle cx="20.5" cy="28" r="7"/><path d="M13.5 28h14M20.5 21c-3.5 4-3.5 10 0 14M20.5 21c3.5 4 3.5 10 0 14"/></g>
+    <g stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M13 11h4M20 11h8M13 15.5h15"/></g>
+  </symbol>
+  <symbol id="i-imzo" viewBox="0 0 48 48">
+    <rect x="3" y="19" width="7" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="2.4"/>
+    <rect x="10" y="16" width="35" height="16" rx="8" fill="currentColor"/>
+    <text x="27.5" y="27" fill="#fff" font-family="Georgia,serif" font-style="italic" font-size="8.5" text-anchor="middle">imzo</text>
+  </symbol>
+
+  <!-- Interfeys -->
+  <symbol id="i-menyu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 6.5h16M4 12h11M4 17.5h16"/></g></symbol>
+  <symbol id="i-qidiruv" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></g></symbol>
+  <symbol id="i-qongiroq" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5a7 7 0 00-7 7v4.3l-1.8 2.9c-.5.8.1 1.8 1 1.8h15.6c.9 0 1.5-1 1-1.8L19 13.8V9.5a7 7 0 00-7-7z"/><path fill="currentColor" d="M9 19.5h6c0 1.6-1.4 2.5-3 2.5s-3-.9-3-2.5z"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-orqaga" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" d="M15.5 4L7.5 12l8 8"/></symbol>
+  <symbol id="i-yopish" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+
+  <!-- Pastki menyu -->
+  <symbol id="i-nav-uy" viewBox="0 0 48 48"><path fill="currentColor" d="M21.4 5.2a4 4 0 015.2 0l14.6 12.4a4 4 0 011.4 3V39a5 5 0 01-5 5H30.5V33a6.5 6.5 0 00-13 0v11H10.4a5 5 0 01-5-5V20.6a4 4 0 011.4-3z"/></symbol>
+  <symbol id="i-nav-profil" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3.4"/><circle cx="24" cy="19" r="7" fill="currentColor"/><path fill="currentColor" d="M11.5 37c2.3-5.6 7-8.5 12.5-8.5s10.2 2.9 12.5 8.5A17.6 17.6 0 0124 42a17.6 17.6 0 01-12.5-5z"/></symbol>
+  <symbol id="i-nav-diagramma" viewBox="0 0 48 48"><path fill="currentColor" d="M21 9.2A17.5 17.5 0 1038.8 27H21z"/><path fill="currentColor" d="M25 4.5v18.5h18.5A18.5 18.5 0 0025 4.5z"/></symbol>
+  <symbol id="i-nav-grid" viewBox="0 0 48 48"><g fill="currentColor"><rect x="5" y="5" width="17" height="17" rx="6"/><rect x="26" y="5" width="17" height="17" rx="6"/><rect x="5" y="26" width="17" height="17" rx="6"/><rect x="26" y="26" width="17" height="17" rx="6"/></g></symbol>
+  <!-- Ota-onam sahifasi -->
+  <symbol id="i-tarix" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 13.5A8 8 0 104.8 8.2"/><path d="M3.5 4.5v4.2h4.2"/><path d="M12 8v4.5l3 2"/></g></symbol>
+  <symbol id="i-ota" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5c2.5 0 4.2 1.8 4.2 4.4S14.5 11.5 12 11.5 7.8 9.5 7.8 6.9 9.5 2.5 12 2.5z"/><path fill="currentColor" d="M4 21.5c0-4.6 2.8-7.6 6-8.3l2 3.2 2-3.2c3.2.7 6 3.7 6 8.3z"/><path fill="#fff" d="M11.3 14.6h1.4l.5 1-.6 3.4h-1.2l-.6-3.4z"/><path fill="currentColor" d="M8.2 6.2c.5-2.2 2-3.4 3.8-3.4 2 0 3.4 1.3 3.8 3.4-1.4-.4-2.6-1.2-3.4-2.2-.9 1.2-2.4 2-4.2 2.2z"/></symbol>
+  <symbol id="i-ona" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5c3 0 4.6 2.2 4.6 5v4.6c-1.2-.6-1.4-1-1.6-1.6-.7 1-1.8 1.5-3 1.5s-2.3-.5-3-1.5c-.2.6-.4 1-1.6 1.6V7.5c0-2.8 1.6-5 4.6-5z"/><path fill="currentColor" d="M4 21.5c0-4.4 2.6-7.3 5.6-8.1L12 16l2.4-2.6c3 .8 5.6 3.7 5.6 8.1z"/></symbol>
+  <symbol id="i-savat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 6.5h15M9.5 6.5V4.5h5v2M6.5 6.5l.8 13a1.5 1.5 0 001.5 1.5h6.4a1.5 1.5 0 001.5-1.5l.8-13M10.3 10.5v6.5M13.7 10.5v6.5"/></g></symbol>
+  <symbol id="i-chevron-past" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M6 9.5l6 6 6-6"/></symbol>
+  <symbol id="i-bolga" viewBox="0 0 48 48">
+    <rect x="17" y="3.5" width="13" height="23" rx="3" transform="rotate(45 23.5 15)" fill="currentColor"/>
+    <path fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" d="M27 22l14 14"/>
+    <rect x="5" y="38" width="22" height="6" rx="2.5" fill="currentColor"/>
+  </symbol>
+</svg>
+
+  <div class="ekran">
+    
+<header class="sarlavha-bar">
+  <a class="orqaga" href="xizmatlar.html?tab=jarimalar" aria-label="Orqaga"><svg class="ik " aria-hidden="true"><use href="#i-orqaga"/></svg>
+</a>
+  <h1 class="sarlavha-kichik">MIB qarzlari</h1>
+  <button class="tarix-btn" type="button" data-toast="To'lovlar tarixi bo'sh" aria-label="To'lovlar tarixi"><svg class="ik " aria-hidden="true"><use href="#i-tarix"/></svg>
+</button>
+</header>
+
+<div class="segment" role="tablist">
+  
+  <button class="segment-el faol" type="button" role="tab" data-kim="otam">
+    <svg class="ik " aria-hidden="true"><use href="#i-ota"/></svg>
+Otam uchun
+  </button>
+  
+  <button class="segment-el" type="button" role="tab" data-kim="onam">
+    <svg class="ik " aria-hidden="true"><use href="#i-ona"/></svg>
+Onam uchun
+  </button>
+  
+</div>
+
+
+<section class="shaxs-panel" data-panel="otam">
+  <label class="maydon-nom">JShShIR</label>
+  <div class="maydon">31710813070025</div>
+  <div class="fio">ABDUL*** ZAFARBEK ***LAYEVICH</div>
+
+  <label class="maydon-nom">To'lanadigan summa</label>
+  <div class="maydon" data-summa>1 547 660 031.70</div>
+
+  <div class="maydon-nom karta-nom">Foydalanuvchining bank kartalari</div>
+  <div class="bank-karta" data-karta>
+    <div class="karta-ichi">
+      <span class="karta-logo">H</span>
+      <span class="karta-matn">
+        <span class="karta-egasi">JAVOXIR SADULLAYEV</span>
+        <span class="karta-raqam">9860 **** **** 4162 &nbsp; 12/29</span>
+      </span>
+    </div>
+    <button class="karta-aktiv" type="button" data-aktivlash>Kartani aktivlashtirish</button>
+    <button class="karta-ochir" type="button" data-toast="Karta o'chirildi (demo)" aria-label="Kartani o'chirish"><svg class="ik " aria-hidden="true"><use href="#i-savat"/></svg>
+</button>
+  </div>
+
+  <div class="tolov-qator qarz tanlangan" data-qator data-summa-qiymat="1 547 660 031.70">
+    <button class="qator-bosh" type="button" data-tanla>
+      <span class="qator-nom">MIB qarzi</span>
+      <span class="qator-summa">1 547 660 031.70</span>
+      <span class="belgi"></span>
+    </button>
+    <button class="qator-och" type="button" data-och aria-label="Batafsil"><svg class="ik " aria-hidden="true"><use href="#i-chevron-past"/></svg>
+</button>
+    <div class="tafsilot">
+      <div class="tafsilot-el"><span>Ijro ishi</span><span>1 547 660 031.70</span></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="shaxs-panel" data-panel="onam" hidden>
+  <label class="maydon-nom">JShShIR</label>
+  <div class="maydon">41204853070041</div>
+  <div class="fio">MAH*** RAHIMOVNA ***LAYEVA</div>
+
+  <label class="maydon-nom">To'lanadigan summa</label>
+  <div class="maydon" data-summa>0.00</div>
+
+  <div class="maydon-nom karta-nom">Foydalanuvchining bank kartalari</div>
+  <div class="bank-karta" data-karta>
+    <div class="karta-ichi">
+      <span class="karta-logo">H</span>
+      <span class="karta-matn">
+        <span class="karta-egasi">JAVOXIR SADULLAYEV</span>
+        <span class="karta-raqam">9860 **** **** 4162 &nbsp; 12/29</span>
+      </span>
+    </div>
+    <button class="karta-aktiv" type="button" data-aktivlash>Kartani aktivlashtirish</button>
+    <button class="karta-ochir" type="button" data-toast="Karta o'chirildi (demo)" aria-label="Kartani o'chirish"><svg class="ik " aria-hidden="true"><use href="#i-savat"/></svg>
+</button>
+  </div>
+
+  <div class="tolov-qator qarz bosh" data-qator data-summa-qiymat="0.00">
+    <button class="qator-bosh" type="button" data-tanla>
+      <span class="qator-nom">MIB qarzi</span>
+      <span class="qator-summa">0.00</span>
+      <span class="belgi"></span>
+    </button>
+    <button class="qator-och" type="button" data-och aria-label="Batafsil"><svg class="ik " aria-hidden="true"><use href="#i-chevron-past"/></svg>
+</button>
+    <div class="tafsilot">
+      <div class="tafsilot-el bosh-matn">MIB qarzi yo'q</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="pastki-tugma">
+  <button class="tolash-btn" type="button" id="tolashBtn" disabled>To'lash</button>
+</div>
+
+  </div>
+  <div class="demo-belgi" aria-hidden="true">DEMO · norasmiy</div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="assets/ilova.js"></script>
+  <script src="assets/ota_ona.js"></script>
+</body>
+</html>
